@@ -1,58 +1,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Prior to admission</title>
+	<title>Document</title>
 	<meta name="author" content="pele" />
-	<link href="Styles/DocList.css" rel="stylesheet" type="text/css" />
+	<link href="Styles/Document.css" rel="stylesheet" type="text/css" />
 	<!-- Date: 2013-08-04 -->
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  	<script>
-  	function Save(){
-	  $(function() {
-	    $( "#dialog-confirm-Save" ).dialog({
-	      resizable: false,
-	      height:140,
-	      modal: true,
-	      buttons: {
-	        "OK": function() {
-	          $( this ).dialog( "close" );
-	        }
-	      }
-	    });
-	  });
-	  }
-	  
-	  function Cancel(){
-		  $(function() {
-		    $( "#dialog-confirm-Cancel" ).dialog({
-		      resizable: false,
-		      height:140,
-		      modal: true,
-		      buttons: {
-		        "Stay on this page": function() {
-		          $( this ).dialog( "close" );
-		        },
-		        Cancel: function() {
-		          $( this ).dialog( "close" );
-		        }
-		      }
-		    });
-		  });
-	  }
-  	</script>
+	<script type="text/javascript">
+		function Save(){
+		}
+	</script>
 </head>
 <body>
 <body>
-
-	<div id="dialog-confirm-Save" title="Your changes have been saved" class="alert">
-  		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>See you soon!</p>
-	</div>
-	
-	<div id="dialog-confirm-Cancel" title="Exit without saving?" class="alert">
-  		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Your changes will be discarded. Are you sure you want to exit?</p>
-	</div>
-	
 	<div class="Title">
 		<p>Prior to admission</p>
 	</div>
