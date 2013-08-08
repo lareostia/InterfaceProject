@@ -78,7 +78,34 @@
 	font-size:15px;
 }
 
-.alert
+#dialog-confirm-Save
 {
 	display:none;
 }
+
+#dialog-confirm-Cancel
+{
+	display:none;
+}
+
+.ui-dialog
+{
+	width: 400px!important;
+}
+
+.ui-dialog-title
+{
+	font-family: Verdana,sans-serif;
+	font-size: 13px;
+}
+
+.ui-button-text
+{
+	font-size:0.8em;
+}
+
+.ui-dialog-content
+{
+	height:70px!important;
+}
+
