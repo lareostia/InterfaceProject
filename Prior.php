@@ -17,6 +17,7 @@
 	      buttons: {
 	        "OK": function() {
 	          $( this ).dialog( "close" );
+	          window.location.assign('options.html')
 	        }
 	      }
 	    });
@@ -33,8 +34,9 @@
 		        "Stay on this page": function() {
 		          $( this ).dialog( "close" );
 		        },
-		        Cancel: function() {
+		        "Exit without saving": function() {
 		          $( this ).dialog( "close" );
+		          window.location.assign('options.html')
 		        }
 		      }
 		    });
@@ -45,11 +47,11 @@
 <body>
 <body>
 
-	<div id="dialog-confirm-Save" title="Your changes have been saved" class="alert">
+	<div id="dialog-confirm-Save" title="Your changes have been saved">
   		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>See you soon!</p>
 	</div>
 	
-	<div id="dialog-confirm-Cancel" title="Exit without saving?" class="alert">
+	<div id="dialog-confirm-Cancel" title="Exit without saving?">
   		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Your changes will be discarded. Are you sure you want to exit?</p>
 	</div>
 	
