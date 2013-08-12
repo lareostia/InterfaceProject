@@ -1,3 +1,6 @@
+/**
+ * @author Pooja
+ */
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Prior to admission</title>
@@ -45,18 +48,8 @@
   	</script>
 </head>
 <body>
-	<!--<div id = "breadcrumbstrail" style = "float: left">
-		
-		<div id = "homeBreadCrumb" style ="float: left" >
-			<a href="options.html" >HOME &nbsp;</a>
-		</div>
-		<div id = "priorBreadCrumb" style ="float: left" >
-			<a href="prior.php"> >>Prior to Admission</a>			
-		</div>
-		
-	</div> -->
-	
-	
+<body>
+
 	<div id="dialog-confirm-Save" title="Your changes have been saved">
   		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>See you soon!</p>
 	</div>
@@ -69,10 +62,12 @@
 		<p>Prior to admission</p>
 	</div>
 	<div class="Introduction">
-		<p>     These are the documents you will be needing for applying to Santa Clara University. If you have received a document you can mark it as received
-			by clicking the corresponding checkbox and saving your state. The system will remember your selections and display them the next time you visit us.
-			Each document provides you with explanatory pictures and detailed information, along with specific links that will help you resolve any doubt 
-			that may come up during the application process.</p>
+		<p>     Congratulations on being accepted at Santa Clara University
+				The list documents you will need to apply for Visa at the Us embassy in your country. 
+				The following checklist will help you organise the process.
+				You can keep track of the necessary docs by clicking on the documents once you receive them
+				and click save. 
+		</p>
 	</div>
 <?php
 // We will recover from the database:
