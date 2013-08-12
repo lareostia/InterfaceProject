@@ -1,0 +1,72 @@
+.title
+{
+	text-align:center;
+	border: 0;
+	font-size: 25px;
+	font-family: Georgia,serif;
+	line-height: 17px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration:underline;
+	color: #93191b;
+}
+
+.body
+{
+	width:900px;
+}
+
+.picture
+{
+	margin-left:100px;
+	margin-right:auto;
+}
+
+
+.introduction
+{
+	font-family: Verdana,sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 17px;
+	text-transform: none;
+	letter-spacing: 0px;
+	margin-bottom:30px;
+}
+
+.DetailedExplanation
+{
+	margin-top:30px;
+	font-family: Verdana,sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 17px;
+	text-transform: none;
+	letter-spacing: 0px;
+}
+
+.linksTitle
+{
+	color: #93191B !important;
+	text-decoration:underline;
+	font-family: Verdana,sans-serif!important;
+	font-size: 11px;
+	margin-bottom:8px;
+	font-weight:bold;
+}
+
+.link
+{
+	text-decoration:none;
+	font-weight:normal;
+	color: #93191B !important;
+	text-decoration:none;
+	font-family: Verdana,sans-serif;
+	font-size: 11px;
+	margin-bottom:8px;
+}
+
+.link:hover
+{
+	text-decoration:underline!important;
+}

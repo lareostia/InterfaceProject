@@ -20,26 +20,19 @@
 		});
 		
 		*/
-		function validate(){
-		
+	function validate(){	
 		
 		var x = document.getElementById("username").value;
 		var y = document.getElementById("password").value;
 		if (x==''||x==null){
-		alert( "user name must be filled");
-		}else if (y== ''||y==null){
-			alert("password must be filled");
-		} 
-		else if (x=="testname" && y== "password"){ 
-			window.location = "prior.html";
+		alert( "fields must be filled out");
+		}else if (x=="testname"){ 
+			window.location = "options.html";
 		} 
 	}
-	
 	function cancel(){
 		window.location="index.html";
 	}
-	
-		
 	</script>
 	
 	
@@ -55,12 +48,8 @@
 	<table class="tableInput">
 		<tr>
 			<td class="imageBackground">
-				
 					<div class="button"  id="login"  onclick="validate()"> Login</div>
-						
 					<!--</div>-->
-					
-				</a>
 			</td>
 			<td class="imageBackground">
 				<!--<a href="mainPage.html">
@@ -81,6 +70,5 @@
 	</table>
 	
 </div>
-</form>
 </body>
 </html>

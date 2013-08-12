@@ -109,3 +109,12 @@
 	height:70px!important;
 }
 
+.text
+{
+		text-decoration:none;
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	color:#333;
+	font-weight:normal;
+	margin-bottom:20px;
+}

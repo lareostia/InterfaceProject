@@ -10,46 +10,55 @@
 
 </script>
 </head>
-<body>
-<body>
+<body class="body">
+	<?php
+	//$key = $_GET["$key"];
+	$key = 1;
+	if ($key != 1)
+	{
+		echo '<p>Page not yet ready for demostration. <a href="prior.php">Go back.</a></p>';
+	}
+	else {
+		$title = 'Certification of finances';
+		$introduction = 'This document is required in order to proove that the student has enough resources to complete his/hers degree. In order to prove this,
+		the university requires financial documents that verify that the student will have the neccessary funds to complete his/hers studies without going through
+		economical difficulties. The usual document that students provide is a bank letter certifying that there is a bank account under the name of the student
+		or his/hers parents that contains the required funds. This would be an example of such a letter:';
+		$image = 'Images/Certification.jpg';
+		$DetailedExplanation = 'The College Board Certification of Finances Form must be completed and certified by a bank official. 
+		The minimum assured support amount should cover the total cost of the first year of attendance. 
+		It is important that the Certificate of Finance include the applicant; name exactly as it appears in our records. 
+		Our inability to match your financial documentation with your application may result in the closure of your file.';
+	}
+	?>
+	<div id="homeCrumb" style ="float: left" >
+		<a href="options.html" >HOME &nbsp;</a>
+	</div>
+	<div id="priorCrumb" style ="float: left" >
+		<a href="prior.php"> >>Prior to Admission</a>			
+	</div>
+	</br>
 	<div class="Title">
-		<p>Prior to admission</p>
+		<p><?php echo $title?></p>
 	</div>
 	<div class="Introduction">
-		<p>     These are the documents you will be needing for applying to Santa Clara University. If you have received a document you can mark it as received
-			by clicking the corresponding checkbox and saving your state. The system will remember your selections and display them the next time you visit us.
-			Each document provides you with explanatory pictures and detailed information, along with specific links that will help you resolve any doubt 
-			that may come up during the application process.</p>
+		<p><?php echo $introduction?></p>
 	</div>
-<?php
-// We will recover from the database:
-/*
- * 1- The necessary documents for this section
- * 2- The user information and the documents that the user has marked as "received"
- * 
- * For simulation purposes we are going to use a simulated user and simulated documents putted directly in the code.*/
- 
-//Simulated documents list:
-echo '<ul>';
-$documents = array
-(
-	'Document number one',
-	'Document number two',
-	'Document number three',
-	'Document number four'
-);
-foreach (array_keys($documents) as $key) {
-	echo '<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input> This is the way of displaying the document: <a class="link" href="document.php?'.$key.'">'.$documents[$key].'</a></li>';
-}
-echo '</ul>';
-?>
-
-<div>
-	<table class="tableButtons">
-		<tr>
-			<td class="button" align="center"><a href="#" class="buttonText" onclick="Save();">Save</h1></td>
-			<td class="button" align="center"><a href="#" class="buttonText" onclick="return Cancel()">Cancel</h2></td>
-		</tr>
-	</table>
-</div>
+	<div>
+		<?php echo '<img class="Picture" src="'.$image.'">'?>
+	</div>
+	<div class="DetailedExplanation">
+		<p><?php echo $DetailedExplanation?></p>
+	</div>
+	<p class="LinksTitle">Helpful links</p>
+	<div>
+		<ul>
+			<li class="link">
+				<a href="http://www.scu.edu/ugrad/international/upload/2013-Certification-of-Finances-Guidelines_1.pdf">Guideline of finances certification</a>
+			</li>
+			<li class="link">
+				<a href="http://www.scu.edu/financialaid/Cost-of-Attendance.cfm">Estimated costs of attendance.</a>
+			</li>
+		</ul>
+	</div>
 </body>

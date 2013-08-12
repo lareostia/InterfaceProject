@@ -55,16 +55,15 @@
 		</div>
 		
 	</div> -->
-	
-	
 	<div id="dialog-confirm-Save" title="Your changes have been saved">
   		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>See you soon!</p>
 	</div>
-	
 	<div id="dialog-confirm-Cancel" title="Exit without saving?">
   		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Your changes will be discarded. Are you sure you want to exit?</p>
 	</div>
-	
+	<div id="homeCrumb" style ="float: left" >
+		<a href="options.html" >HOME &nbsp;</a>
+	</div></br>
 	<div class="Title">
 		<p>Prior to admission</p>
 	</div>
@@ -86,13 +85,13 @@
 echo '<ul>';
 $documents = array
 (
-	'Document number one',
+	'Certification of finances',
 	'Document number two',
 	'Document number three',
 	'Document number four'
 );
 foreach (array_keys($documents) as $key) {
-	echo '<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input> This is the way of displaying the document: <a class="link" href="document.php?'.$key.'">'.$documents[$key].'</a></li>';
+	echo '<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="document.php?'.$key.'">'.$documents[$key].'</a></li>';
 }
 echo '</ul>';
 ?>
