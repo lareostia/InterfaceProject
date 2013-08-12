@@ -26,8 +26,11 @@
 		var x = document.getElementById("username").value;
 		var y = document.getElementById("password").value;
 		if (x==''||x==null){
-		alert( "fields must be filled out");
-		}else if (x=="testname"){ 
+		alert( "user name must be filled");
+		}else if (y== ''||y==null){
+			alert("password must be filled");
+		} 
+		else if (x=="testname" && y== "password"){ 
 			window.location = "prior.html";
 		} 
 	}
