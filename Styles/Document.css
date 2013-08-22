@@ -23,17 +23,19 @@
 	margin-right:auto;
 }
 
-.doublePicture
+.multiPicture
 {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	width:400px;
+	text-align:center;
 }
 
-.doublePictureImg
+.multiPictureImg
 {
 	margin-right:10px;
+}
+
+.wrapperLeft
+{
+	width:100px;
 }
 
 .introduction
@@ -89,9 +91,6 @@
 	background-image: url('../Images/button.jpg');
 	width:103px;
 	height:22px;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
 }
 
 .buttonLink
