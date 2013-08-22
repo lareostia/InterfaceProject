@@ -23,6 +23,18 @@
 	margin-right:auto;
 }
 
+.doublePicture
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+}
+
+.doublePictureImg
+{
+	margin-right:10px;
+}
 
 .introduction
 {
