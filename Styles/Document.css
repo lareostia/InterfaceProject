@@ -18,7 +18,8 @@
 
 .picture
 {
-	margin-left:100px;
+	display:block;
+	margin-left:auto;
 	margin-right:auto;
 }
 
@@ -69,4 +70,40 @@
 .link:hover
 {
 	text-decoration:underline!important;
+}
+
+.button
+{
+	background-image: url('../Images/button.jpg');
+	width:103px;
+	height:22px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.buttonLink
+{
+	text-decoration: none;
+}
+
+.buttonText
+{
+	margin-left:30px;
+	color:black;
+	text-decoration:none!important;
+	font-family: Verdana,sans-serif;
+	font-size: 13px;
+	font-weight:bold;
+	text-align: center;
+	margin-top:3px;
+	float:left;
+	margin-right:10px;
+}
+
+.buttonText:hover
+{
+	text-decoration:underline;
+	color: #93191B!important;
+	font-size:15px!important;
 }
