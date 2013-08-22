@@ -1,3 +1,23 @@
+.mainTitle
+{
+	text-align:center;
+	border: 0;
+	font-size: 25px;
+	font-family: Georgia,serif;
+	line-height: 17px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration:underline;
+	color: White;
+	background-image:url('../Images/titleBackground.jpg');
+	height:100px;
+}
+
+.titleText
+{
+	padding-top:75px;
+}
+
 .option
 {
 	border-bottom:1px dotted #ccc;
