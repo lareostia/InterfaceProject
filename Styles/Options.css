@@ -25,14 +25,24 @@
 	list-style:none;
 }
 
+.titleLink
+{
+	color: #93191B !important;
+	text-decoration:none;
+	font-family: Verdana,sans-serif!important;
+	font-size: 11px;
+	margin-bottom:8px;
+	font-weight:bold;
+}
+
 .text
 {
-	text-decoration:none;
-	font-family: Verdana, sans-serif;
+	font-family: Verdana,sans-serif;
 	font-size: 11px;
-	color:#333;
-	font-weight:normal;
-	margin-bottom:20px;
+	line-height: 17px;
+	text-transform: none;
+	letter-spacing: 0px;
+	font-weight: normal!important;
 }
 
 .title
@@ -42,16 +52,6 @@
 	font-family: Verdana,sans-serif;
 	font-size: 11px;
 	margin-bottom:8px;
-}
-
-.titleLink
-{
-	color: #93191B !important;
-	text-decoration:none;
-	font-family: Verdana,sans-serif!important;
-	font-size: 11px;
-	margin-bottom:8px;
-	font-weight:bold;
 }
 
 .image

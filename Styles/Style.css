@@ -1,10 +1,10 @@
 .iframe
 {
-	min-height:1000px;
-	min-width:1000px;
+	height:1000px;
+	width:792px;
 }
 
 .text
 {
-	font-size:larger;
+	/*font-size:larger;*/
 }
