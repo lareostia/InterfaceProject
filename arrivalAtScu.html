@@ -1,0 +1,89 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ArrivalSCU</title>
+	<meta name="author" content="pele" />
+	<link href="Styles/DocList.css" rel="stylesheet" type="text/css" />
+	<!-- Date: 2013-08-04 -->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  	<script>
+  	function Save(){
+	  $(function() {
+	    $( "#dialog-confirm-Save" ).dialog({
+	      resizable: false,
+	      height:140,
+	      modal: true,
+	      buttons: {
+	        "OK": function() {
+	          $( this ).dialog( "close" );
+	          window.location.assign('options.html')
+	        }
+	      }
+	    });
+	  });
+	  }
+	  
+	  function Cancel(){
+		  $(function() {
+		    $( "#dialog-confirm-Cancel" ).dialog({
+		      resizable: false,
+		      height:140,
+		      modal: true,
+		      buttons: {
+		        "Stay on this page": function() {
+		          $( this ).dialog( "close" );
+		        },
+		        "Exit without saving": function() {
+		          $( this ).dialog( "close" );
+		          window.location.assign('options.html')
+		        }
+		      }
+		    });
+		  });
+	  }
+  	</script>
+</head>
+<body>
+<body>
+
+	<div id="dialog-confirm-Save" title="Your changes have been saved">
+  		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>See you soon!</p>
+	</div>
+	
+	<div id="dialog-confirm-Cancel" title="Exit without saving?">
+  		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Your changes will be discarded. Are you sure you want to exit?</p>
+	</div>
+	
+	<div class="Title">
+		<p>Arrival at SCU</p>
+	</div>
+	<div >
+		<p>     COngratu;ations on having obtained the F1 visa.These documents will be necessary when you enter the country and arrive at SCU <br />
+					
+		</p>
+	</div>
+	<ul>
+	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Valid passport </a></li>
+	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Valid F-1/J-1 visa stamp</a></li>
+	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Original signed I-20/DS-2019</a></li>
+	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Original financial documents used for obtaining visa</a></li>
+	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Letter of admission to Santa Clara University</a></li>
+</ul>
+<div>
+	<p>These documents must be mailed to : 
+	<a href="mailToAdmissions.html">Mail to admissions dept</a>
+	<img border="0" src="Images/mail_icon.jpg" alt="mail_icon" width="35" height="20"></p>
+	
+	
+</div>
+
+<div>
+	<table class="tableButtons">
+		<tr>
+			<td class="button" align="center"><a href="#" class="buttonText" onclick="Save();">Save</h1></td>
+			<td class="button" align="center"><a href="#" class="buttonText" onclick="return Cancel()">Cancel</h2></td>
+		</tr>
+	</table>
+</div>
+</body>
