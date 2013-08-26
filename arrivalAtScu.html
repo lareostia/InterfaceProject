@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 <html>
-	<body>
-=======
->>>>>>> e4585766a5bf7eb33346441bc2463a8eb0116f0f
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>ArrivalSCU</title>
@@ -47,9 +44,12 @@
 		    });
 		  });
 	  }
+	  function Open()
+	  {
+	  	window.open('Calendar.html','Calendar','toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=240,height=240');
+	  }
   	</script>
 </head>
-<body>
 <body>
 
 	<div id="dialog-confirm-Save" title="Your changes have been saved">
@@ -59,12 +59,17 @@
 	<div id="dialog-confirm-Cancel" title="Exit without saving?">
   		<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Your changes will be discarded. Are you sure you want to exit?</p>
 	</div>
-	
+	<div id="homeCrumb" style ="float: left" >
+		<a href="options.html" >HOME &nbsp;</a>
+		<a href="#" onclick="Open();" style="float: right;">
+			<img src="Images/calendarIcon.jpg">
+		</a>
+	</div></br>
 	<div class="Title">
 		<p>Arrival at SCU</p>
 	</div>
 	<div >
-<<<<<<< HEAD
+
 		<p>     You now have your student visa and an admission at Santa Clara University.<br />
 			You will need to following documents at the port of entry to the USA and when you arrive at SCU					
 		</p>
@@ -73,29 +78,11 @@
 	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input>Valid passport </a></li>
 	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="f1Stamp.html">Valid F-1/J-1 visa stamp(on your passport)</a></li>
 	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="i20Signed.html">Original signed I-20/DS-2019</a></li>
-	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="i20Signed.html">Original financial documents used for obtaining visa</a></li>
+	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="finances.html">Original financial documents used for obtaining visa</a></li>
 	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="admissionLetter.html">Letter of admission to Santa Clara University</a></li>
 </ul>
-=======
-		<p>     COngratu;ations on having obtained the F1 visa.These documents will be necessary when you enter the country and arrive at SCU <br />
-					
-		</p>
-	</div>
-	<ul>
-	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Valid passport </a></li>
-	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Valid F-1/J-1 visa stamp</a></li>
-	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Original signed I-20/DS-2019</a></li>
-	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Original financial documents used for obtaining visa</a></li>
-	<li type="none" content="none" class="listElement"><input type="checkbox" id="Checkbox'.$key.'"></input><a class="link" href="Certification.html">Letter of admission to Santa Clara University</a></li>
-</ul>
-<div>
-	<p>These documents must be mailed to : 
-	<a href="mailToAdmissions.html">Mail to admissions dept</a>
-	<img border="0" src="Images/mail_icon.jpg" alt="mail_icon" width="35" height="20"></p>
-	
-	
-</div>
->>>>>>> e4585766a5bf7eb33346441bc2463a8eb0116f0f
+
+
 
 <div>
 	<table class="tableButtons">
@@ -105,9 +92,9 @@
 		</tr>
 	</table>
 </div>
-<<<<<<< HEAD
+
 </body>
 </html>
-=======
-</body>
->>>>>>> e4585766a5bf7eb33346441bc2463a8eb0116f0f
+
+
+
