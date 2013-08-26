@@ -11,6 +11,11 @@
 	color: #93191b;
 }
 
+#homeCrumb
+{
+	width:100%;
+}
+
 .introduction
 {
 	font-family: Verdana,sans-serif;
@@ -118,3 +123,40 @@
 	font-weight:normal;
 	margin-bottom:20px;
 }
+
+/**************************************************/
+
+#datepicker
+{
+	float:right;
+}
+
+.ui-datepicker
+{
+	width:200px;
+}
+
+.ui-datepicker-header
+{
+	width:200px;
+	font-size: 0.65em!important;
+}
+
+
+.ui-datepicker-calendar
+{
+	max-width:200px;
+	max-height:200px;
+	font-size:small!important;
+}
+
+.ui-widget
+{
+	max-width:200px;
+}
+
+.ui-state-default:hover
+{
+	color:red!important;
+}
+

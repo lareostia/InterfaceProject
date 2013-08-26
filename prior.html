@@ -1,12 +1,25 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Prior to admission</title>
+	<meta charset="utf-8" />
 	<meta name="author" content="pele" />
 	<link href="Styles/DocList.css" rel="stylesheet" type="text/css" />
 	<!-- Date: 2013-08-04 -->
+
+	<!-- Calendar  -->
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  	<script>
+	  $(function() {
+	    $( "#datepicker" ).datepicker();
+	  });
+	 </script>
+	 
+	 <!-- Calendar  -->
   	<script>
   	function Save(){
 	  $(function() {
@@ -42,6 +55,11 @@
 		    });
 		  });
 	  }
+	  
+	  function Open()
+	  {
+	  	window.open('Calendar.html','Calendar','toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=240,height=240');
+	  }
   	</script>
 </head>
 <body>
@@ -53,9 +71,12 @@
 	</div>
 	<div id="homeCrumb" style ="float: left" >
 		<a href="options.html" >HOME &nbsp;</a>
+		<a href="#" onclick="Open();" style="float: right;">
+			<img src="Images/calendarIcon.jpg">
+		</a>
 	</div></br>
-	<div class="Title">
-		<p>Prior to admission</p>
+	<div>
+		<p  class="Title">Prior to admission </p>
 	</div>
 	<div class="Introduction">
 		<p>     These are the documents you will be needing for applying to Santa Clara University. If you have received a document you can mark it as received
