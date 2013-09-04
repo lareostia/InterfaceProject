@@ -7,37 +7,103 @@
 	<title>mainPage</title>
 	<meta name="author" content="pele" />
 	<link href="Styles/Iframe.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.js"></script>
 	<!-- Date: 2013-08-04 -->
+	
+	<script type="text/javascript">
+		
+		/*$(document).ready(function(){
+		  $("#cancel").click(function(){
+		  	alert ("cancel");
+		   //window.location = "Index.html";
+		  });
+		});
+		
+		*/
+	function validate(){	
+		var x = document.getElementById("username").value;
+		var y = document.getElementById("password").value;
+		if (x==''||x==null|| x=='example@server.com'){
+			document.getElementById('warningUserName').style.visibility="visible";
+		}else if (x=="speleato@gmail.com" && y=="password"){ 
+			window.location = "optionsChangeOfStatus.html";
+		}else if (x!="speleato@gmail.com")
+		{
+			document.getElementById('warningUserName').style.visibility="visible";
+		}
+	}
+	function cancel(){
+		window.location="index.html";
+	}
+	
+	function focus()
+	{
+		if (value == 'example@server.com') 
+		{value=''};
+	}
+	
+	function Blur()
+	{
+		if (value== '') 
+		{value='example@server.com'}
+	}
+	</script>
 </head>
 <body>
-<div class="body_login">
-	<h1 class="text"> Username</h1>
-	<input class="input" />
-	<h2 class="text"> Password</h2>
-	<input class="input" />
-	<table class="tableInput">
-		<tr>
-			<td class="imageBackground">
-				<a href="optionsChangeOfStatus.html">
-					<div class="button">Login</div>
-				</a>
-			</td>
-			<td class="imageBackground">
-				<a href="mainPage.html">
-					<div class="button">Cancel</div>
-				</a>
-			</td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<td class="imageBackground_bigButton">
-				<a href="NewUser.html">
-					<div class="bigButton">Create new User</div>
-				</a>
-			</td>
-		</tr>
-	</table>
+<!-- <form name="loginForm"  method="post"> -->
+	
+<div class="body_login"> 
+	<div class="mainMenu">
+		<h1 class="text" > Username</h1>
+		<input type="text" id="username" name="username" value="example@server.com"/><em id="warningUserName" class="invisibleText">Invalid user name</em>
+		<h2 class="text"> Password</h2>
+		<input type="password" id = "password" name="password"/>
+	
+		<table class="tableInput">
+			<tr>
+				<td class="imageBackground">
+						<div class="button"  id="login"  onclick="validate()"> Login</div>
+				</td>
+				<td class="imageBackground">
+					<div class="button"  id="cancel"  onclick="cancel()"> Cancel</div>	
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td class="imageBackground_bigButton">
+					<a href="NewUser.html">
+						<div class="bigButton">Create new User</div>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
 </div>
 </body>
+<script type="text/javascript">
+
+	var user = document.getElementById("username");
+	user.style.color='gray';
+	user.onfocus=function focus()
+	{
+		if (user.value == 'example@server.com') 
+		{
+			user.value=''
+		};
+		user.style.color='black';
+		if (document.getElementById('warningUserName').style.visibility=="visible")
+		{
+			document.getElementById('warningUserName').style.visibility="hidden";
+		}
+	}
+	
+	user.onblur=function Blur()
+	{
+		if (user.value== '') 
+		{user.value='example@server.com';
+		user.style.color="gray";}
+	}
+	
+</script>
 </html>

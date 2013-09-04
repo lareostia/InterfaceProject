@@ -93,30 +93,37 @@
 	display:none;
 }
 
+.ui-widget
+{
+	max-width:350px;
+}
+
 .ui-dialog
 {
-	width: 400px!important;
+	width: 350px!important;
+	top:100px!important;
 }
 
 .ui-dialog-title
 {
 	font-family: Verdana,sans-serif;
-	font-size: 13px;
+	font-size: 11px;
 }
 
 .ui-button-text
 {
-	font-size:0.8em;
+	font-size:11px;
 }
 
 .ui-dialog-content
 {
-	height:70px!important;
+	height:50px!important;
+	font-size:11px!important;
 }
 
 .text
 {
-		text-decoration:none;
+	text-decoration:none;
 	font-family: Verdana, sans-serif;
 	font-size: 11px;
 	color:#333;
@@ -133,7 +140,7 @@
 
 .ui-datepicker
 {
-	width:200px;
+	max-width:200px;
 }
 
 .ui-datepicker-header
@@ -148,11 +155,6 @@
 	max-width:200px;
 	max-height:200px;
 	font-size:small!important;
-}
-
-.ui-widget
-{
-	max-width:200px;
 }
 
 .ui-state-default:hover
