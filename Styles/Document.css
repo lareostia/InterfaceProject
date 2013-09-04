@@ -63,27 +63,31 @@
 .linksTitle
 {
 	color: #93191B !important;
-	text-decoration:underline;
+	text-decoration:none;
 	font-family: Verdana,sans-serif!important;
 	font-size: 11px;
 	margin-bottom:8px;
 	font-weight:bold;
+	
+	
 }
 
 .link
 {
-	text-decoration:none;
+	
 	font-weight:normal;
 	color: #93191B !important;
 	text-decoration:none;
 	font-family: Verdana,sans-serif;
 	font-size: 11px;
 	margin-bottom:8px;
+	
 }
 
 .link:hover
 {
 	text-decoration:underline!important;
+	
 }
 
 .button
