@@ -25,9 +25,9 @@
 		var y = document.getElementById("password").value;
 		if (x==''||x==null|| x=='example@server.com'){
 			document.getElementById('warningUserName').style.visibility="visible";
-		}else if (x=="speleato@gmail.com"){ 
+		}else if (x=="speleato@gmail.com" && y=="password"){ 
 			window.location = "options.html";
-		}else
+		}else if (x!="speleato@gmail.com")
 		{
 			document.getElementById('warningUserName').style.visibility="visible";
 		}
